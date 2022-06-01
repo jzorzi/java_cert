@@ -1,0 +1,36 @@
+- java class has 2 primary elements 1) methods/functions/procedures and 2) fields/variables
+
+Classes vs Files
+----------------
+- Most of the time each java class is defined in its own .java file and its not required to be public i.e.:
+class Animal {
+	String name;
+}
+
+- You can put 2 classes into the same .java file. At most one of the classes is allowed to be public
+public class Animal {
+	private String name;
+}
+class Animal2 {
+}
+- in the last ex. the filename must match the public class name
+
+Writing a main() method
+-----------------------
+
+public class Zoo {
+	
+	public static void main(String [] args) {
+		System.out.println(" ... test ... ");
+	}
+}
+
+- each file can contain just one public class
+- the filename must match class name
+- the public keyword is called "access modifier", declares the level of exposure to potentiall callers in the program
+- the static keyword binds a method to its class so it can be called by just the class name, i.e. Zoo.main().
+- the void keyword represents the return type
+- the main method parameters can be writed like:
+	1) String[] args;
+	2) String args[];
+	3) String... args;
